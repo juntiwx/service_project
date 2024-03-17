@@ -6,12 +6,12 @@ from borrow.forms import FormBorrow
 # Create your views here.
 def borrow_list(request):
     borrows = BorrowList.objects.all()
-    return render(request, 'borrow_list.html', {'borrows': borrows})
+    return render(request, 'borrow/borrow_list.html', {'borrows': borrows})
 
 
 def borrow_detail(request, pk):
     borrow = get_object_or_404(BorrowList, pk=pk)
-    return render(request, 'borrow_detail.html', {'borrow': borrow})
+    return render(request, 'borrow/borrow_detail.html', {'borrow': borrow})
 
 
 def borrow_create(request):
@@ -22,7 +22,7 @@ def borrow_create(request):
             return redirect('borrow_list')
     else:
         form = FormBorrow()
-    return render(request, 'borrow_form.html', {'form': form})
+    return render(request, 'borrow/borrow_form.html', {'form': form})
 
 
 def borrow_update(request, pk):
@@ -34,7 +34,7 @@ def borrow_update(request, pk):
             return redirect('borrow_list')
     else:
         form = FormBorrow(instance=borrow)
-    return render(request, 'borrow_form.html', {'form': form})
+    return render(request, 'borrow/borrow_form.html', {'form': form})
 
 
 def borrow_delete(request, pk):
@@ -42,4 +42,4 @@ def borrow_delete(request, pk):
     if request.method == 'POST':
         borrow.delete()
         return redirect('borrow_list')
-    return render(request, 'myapp/borrow_confirm_delete.html', {'borrow': borrow})
+    return render(request, 'borrow/borrow_confirm_delete.html', {'borrow': borrow})

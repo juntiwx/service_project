@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aeb69bc-efb1-4d26-a343-06a417cd6693" name="Changes" comment="" />
+    <list default="true" id="0aeb69bc-efb1-4d26-a343-06a417cd6693" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.4065ea3583fd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.600cebb2ce2b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/borrow/borrow_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/borrow/borrow_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/borrow/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/borrow/borrow_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/borrow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/src/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/frontend/src/App.vue" root0="FORCE_HIGHLIGHTING" />
@@ -31,16 +50,22 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2dlyl6yDHWTqIVXd2jUwYXT3TcV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/juntimawa/Desktop/service_project/borrow",
@@ -52,7 +77,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.reader.mode",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Applications/PyCharm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,6 +86,39 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/borrow" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/borrow" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/borrow" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="service_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="service_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -82,11 +140,17 @@
       <workItem from="1710645481593" duration="1825000" />
       <workItem from="1710652499356" duration="1346000" />
       <workItem from="1710661408811" duration="25000" />
-      <workItem from="1710666892228" duration="4207000" />
+      <workItem from="1710666892228" duration="6298000" />
+      <workItem from="1710673832631" duration="133000" />
+      <workItem from="1710673986556" duration="204000" />
+      <workItem from="1710674196707" duration="7600000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

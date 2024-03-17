@@ -1,0 +1,44 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <div>
+        <h1 class="flex justify-center athiti-medium text-xl mb-5">รายการยืม คืน ครุภัณฑ์ เครื่องคอมพิวเตอร์</h1>
+        <table class="w-full table-auto border-collapse border border-slate-400">
+            <thead>
+            <tr>
+                <td class="border border-slate-300 text-center mx-3">ID</td>
+                <td class="border border-slate-300 text-center mx-3">Employee ID <br> (รหัสพนักงาน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Full name <br> (ชื่อ สกุล) *</td>
+                <td class="border border-slate-300 text-center mx-3">Position <br> (ตำแหน่ง) *</td>
+                <td class="border border-slate-300 text-center mx-3">Section <br> (หน่วยงาน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Tel <br> (เบอร์ติดต่อ) *</td>
+                <td class="border border-slate-300 text-center mx-3">Equipment <br> (อุปกรณ์ที่ต้องการยืม) *</td>
+                <td class="border border-slate-300 text-center mx-3">Unit <br> (จำนวน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Purpose <br> (วัตถุประสงค์การใช้งาน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Date time start <br> (วันเวลา เริ่มใช้งาน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Date time end <br> (วันเวลา สิ้นสุดใช้งาน) *</td>
+                <td class="border border-slate-300 text-center mx-3">Location <br> (สถานที่ใช้งาน) *</td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for borrow in borrows %}
+                <tr>
+                    <td class="border border-slate-300"><a href="{% url 'borrow_detail' borrow.pk %}">{{ borrow.employee_id }}</a></td>
+                    <td class="border border-slate-300">{{ borrow.full_name }}</td>
+                    <td class="border border-slate-300">{{ borrow.position }}</td>
+                    <td class="border border-slate-300">{{ borrow.section }}</td>
+                    <td class="border border-slate-300">{{ borrow.tel }}</td>
+                    <td class="border border-slate-300">{{ borrow.equipment }}</td>
+                    <td class="border border-slate-300">{{ borrow.unit }}</td>
+                    <td class="border border-slate-300">{{ borrow.purpose }}</td>
+                    <td class="border border-slate-300">{{ borrow.date_time_start }}</td>
+                    <td class="border border-slate-300">{{ borrow.date_time_end }}</td>
+                    <td class="border border-slate-300">{{ borrow.location }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{% url 'borrow_create' %}">Create New Item</a>
+    </div>
+{% endblock content %}

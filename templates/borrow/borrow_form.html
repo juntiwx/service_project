@@ -1,0 +1,151 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block content %}
+    <div class="flex justify-center p-5 w-screen h-auto text-lg bg-yellow-100">
+        <div class="bg-white shadow-md rounded-2xl h-fit w-11/12 px-8 pt-6 pb-8 mb-4">
+            <h1 class="text-center text-2xl mb-4">
+                {% if form.instance.pk %}Edit Item{% else %}Create New Borrow{% endif %}
+            </h1>
+
+            <!-- Apply Tailwind CSS classes to each form field -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex justify-center items-center w-full">
+                    <img class="w-fit h-fit" src="{% static 'images/logo.png' %}" alt="">
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="flex flex-col justify-center">
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="employee_id">Employee ID
+                                    (รหัสพนักงาน)
+                                    *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="employee_id" type="text" placeholder="Employee ID">
+                                <!-- Render form field errors -->
+                                {% for error in form.name.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="full_name">
+                                    Full name (ชื่อ สกุล) *
+                                </label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="full_name" type="text" placeholder="Full name">
+                                <!-- Render form field errors -->
+                                {% for error in form.name.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="position">Position (ตำแหน่ง)
+                                    *</label>
+                                <select name="position" id="position"
+                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                >
+                                    <option value="">selct</option>
+                                    <option value="test">test</option>
+                                </select>
+                                <!-- Render form field errors -->
+                                {% for error in form.name.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="section">Section (หน่วยงาน)
+                                    *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="section" type="text" placeholder="section">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="tel">Tel (เบอร์ติดต่อ)
+                                    *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="tel" type="text" placeholder="tel">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="equipment">Equipment
+                                    (อุปกรณ์ที่ต้องการยืม)
+                                    *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="equipment" type="text" placeholder="equipment">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="unit">Unit (จำนวน) *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="unit" type="text" placeholder="unit">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="purpose">Purpose
+                                    (วัตถุประสงค์การใช้งาน)
+                                    *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="purpose" type="text" placeholder="purpose">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="date_time_start">Date time
+                                    start
+                                    (วันเวลา
+                                    เริ่มใช้งาน) *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="date_time_start" type="text" placeholder="date_time_start">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="date_time_end">Date time end
+                                    (วันเวลา
+                                    สิ้นสุดใช้งาน) *</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="date_time_end" type="text" placeholder="date_time_end">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                            <div class="mb-4 col-span-2">
+                                <label class="block text-gray-700 font-medium mb-2" for="location">location</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                       id="location" type="text" placeholder="location">
+                                <!-- Render form field errors -->
+                                {% for error in form.price.errors %}
+                                    <p class="text-red-500 text-xs italic">{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <button type="submit"
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Save
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <a href="{% url 'borrow_list' %}" class="text-sm">Back to List</a>
+        </div>
+    </div>
+{% endblock content %}
