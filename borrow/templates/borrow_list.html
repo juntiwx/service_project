@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<h1>Item List</h1>
+<ul>
+    {% for borrow in borrows %}
+    <li><a href="{% url 'borrow_detail' borrow.pk %}">{{ borrow.full_name }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'borrow_create' %}">Create New Item</a>
+{% endblock content %}

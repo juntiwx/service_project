@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<h1>Confirm Delete</h1>
+<p>Are you sure you want to delete "{{ item.name }}"?</p>
+<form action="{% url 'borrow_delete' item.pk %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Confirm">
+</form>
+<a href="{% url 'borrow_list' %}">Cancel</a>
+{% endblock content %}
