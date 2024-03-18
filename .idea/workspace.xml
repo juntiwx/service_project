@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aeb69bc-efb1-4d26-a343-06a417cd6693" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.4065ea3583fd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/CACHE/css/output.600cebb2ce2b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/borrow/borrow_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/borrow/borrow_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/borrow/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/borrow/borrow_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/templates/borrow_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/borrow/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/service_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/src/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/src/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/borrow/borrow_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/borrow/borrow_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/juntimawa/Desktop/service_project/borrow",
     "node.js.detected.package.eslint": "true",
